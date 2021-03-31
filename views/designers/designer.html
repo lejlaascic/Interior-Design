@@ -1,0 +1,12 @@
+<h3>Designers</h3>
+<p>Lorem ipsum dolor sit amet.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis animi, at error perspiciatis repudiandae esse recusandae totam nisi odit rerum vitae nihil illo rem adipisci nobis expedita quam? Laborum magni pariatur ipsam? Saepe aliquid blanditiis numquam eum. Assumenda, explicabo ab omnis, ratione eaque laboriosam facilis numquam molestiae voluptate nulla fugiat quia quae sed nam quam perspiciatis!</p>
+<h4>Our designers are thoughtfully chosen:</h4>
+<div class="row-design">
+    <div class="column-design" ng-repeat='designer in designers'>
+        <img ng-src="{{designer.image}}" alt="{{designer.name}}">
+        <h3>{{designer.name}}</h3>
+        <p class="gray">{{designer.profession}}</p>
+        <p>{{designer.description}}</p>
+    </div>
+</div>

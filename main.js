@@ -1,0 +1,1 @@
+var app = angular.module('myApp',['ngRoute','homeModule','showecaseModule','designerModule','packagesModule','contactModule','signupModule','loginModule']);

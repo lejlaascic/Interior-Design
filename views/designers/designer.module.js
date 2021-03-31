@@ -1,0 +1,1 @@
+var  designerModule=angular.module('designerModule',[]);

@@ -1,0 +1,22 @@
+
+<h3>Contact</h3>
+<p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+<form name="formContact" ng-submit='sendMessage()' novalidate>
+    <label for="name">Name</label>
+    <input type="text" name="name" ng-model='user' required>
+    <span ng-show="formContact.name.$dirty && formContact.name.$invalid">Name is required</span>
+    <span ng-show='formContact.name.$error.required'></span>
+    
+    <label for="email">Email</label>
+    <input type="email" name="email" ng-model='email' required>
+    <span ng-show="formContact.email.$dirty && formContact.email.$invalid">Email is required</span>
+    <span ng-show="formContact.email.$error.required"></span>
+    <span ng-show="formContact.email.$error.email">Invalid email address.</span>
+
+    <label for="msg">Message</label>
+    <textarea name="massage"  cols="200" rows="10" ng-model='message' required></textarea>
+    <span ng-show="formContact.message.$dirty && formContact.message.$invalid"></span>
+  
+
+    <a href="#!contact-success"><button type="submit" ng-disabled="formContact.$invalid" class="coment-btn">Send Message</button></a>
+</form>

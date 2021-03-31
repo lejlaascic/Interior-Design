@@ -1,0 +1,30 @@
+<h3>Packages</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ea illum reiciendis magnam minima expedita itaque maiores ab vitae iste incidunt veniam, error quas fugit asperiores. Voluptatum impedit recusandae ratione reprehenderit assumenda distinctio quia fugiat quam tenetur alias cupiditate, consectetur excepturi dignissimos, totam nisi incidunt temporibus officia ab eaque sapiente earum harum facere repellendus nam! Nisi sapiente accusantium minus commodi!</p>
+<div class="list">
+<ul  ng-repeat='package in pacages'>
+    <li >
+      <h2>{{package.name}}</h2>
+    </li>
+    <li>
+        {{package.planing}}
+    </li>
+    <li>
+        {{package.duration}}
+    </li>
+    <li>
+        {{package.photo}}
+    </li>
+    <li>
+        {{package.discount}}
+    </li>
+    <li>
+        {{package.deals}}
+    </li>
+    <li>  
+        <p class="price">{{package.price | currency: 'KM '}}</p>
+    </li>
+    <li>
+        <a href="#!signup"><button>Sing Up</button></a>
+    </li>
+</ul>
+</div>

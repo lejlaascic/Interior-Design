@@ -1,0 +1,1 @@
+var showecaseModule=angular.module('showecaseModule',[])

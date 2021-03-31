@@ -1,0 +1,23 @@
+<h1>{{msg}}</h1>
+<h3>Showcase</h3>
+<div class="galery" ng-show='galeryVisible'>
+    <div class="row">
+        <div class="column" ng-repeat='img in galery1'>
+            <img ng-src={{img.image}} alt="image1" ng-click='openImage(img)'>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column" ng-repeat='img in galery2' ng-click='openImage(img)'>
+           <img ng-src={{img.image}} alt="image1" ng-click="showImage=!showImage">
+        </div>
+       
+    </div>
+</div>
+<div class="model" ng-show='showImage'>
+    <i class="fas fa-times" ng-click='closeImage()'></i>
+    <div class="model-content">
+        <img ng-src="{{modelimg.image}}" alt="image">
+    <p>{{modelimg.description}}</p>
+    </div>
+    
+</div>

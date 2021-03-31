@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <!--AngularJS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+    <title>Interior Design</title>
+</head>
+
+<body ng-app="myApp">
+    <div class="wrapper">
+        <aside>
+            <h1>Design<br>Company</h1>
+            <nav>
+                <a href="#!home">Home</a>
+                <a href="#!showecase">Showcase</a>
+                <a href="#!designer">Designers</a>
+                <a href="#!packages">Packages</a>
+                <a href="#!contact">Contact</a>
+            </nav>
+        </aside>
+        <main ng-view>
+
+        </main>
+    </div>
+    <footer>&copy;Interior Design</footer>
+    <script src="main.js"></script>
+    <script src="config.js"></script>
+
+
+    <!--Home Module-->
+    <script src="views/home/home.module.js"></script>
+    <script src="views/home/home.controller.js"></script>
+    <!--Showcase Module-->
+    <script src="views/showecase/showecase.module.js"></script>
+    <script src="views/showecase/showecase.controller.js"></script>
+    <!--Designer Module-->
+    <script src="views/designers/designer.module.js"></script>
+    <script src="views/designers/designer.controller.js"></script>
+    <!--Packages Module-->
+    <script src="views/packages/packages.module.js"></script>
+    <script src="views/packages/packages.controller.js"></script>
+    <!--Contact Module-->
+    <script src="views/contact/contact.module.js"></script>
+    <script src="views/contact/contact.controller.js"></script>
+    <!--Signup Module-->
+    <script src="views/signup/signup.module.js"></script>
+    <script src="views/signup/signup.controller.js"></script>
+    <!--Login Module-->
+    <script src="views/login/login.module.js"></script>
+    <script src="views/login/login.controller.js"></script>
+
+
+</body>
+
+</html>

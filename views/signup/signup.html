@@ -1,0 +1,30 @@
+<h3>Sing Up</h3>
+<form name="signupForm" novalidate>
+    <label for="firstname">First Name</label>
+    <input type="text" name="firstname" ng-model='user.firstname' required>
+    <span ng-show="signupForm.firstname.$dirty && signupForm.firstname.$invalid">First Name is required</span>
+    <span ng-show="signupForm.firstname.$error.required"></span>
+
+    <label for="lastname">Last Name</label>
+    <input type="text" name="lastname" ng-model='user.lastname' required>
+    <span ng-show="signupForm.lastname.$dirty && signupForm.lastname.$invalid">Last Name is required</span>
+    <span ng-show="signupForm.lastname.$error.required"></span>
+
+    <label for="username">Username</label>
+    <input type="text" name="username" ng-model='user.username' required>
+    <span ng-show="signupForm.username.$dirty && signupForm.username.$invalid">Username is required</span>
+    <span ng-show="signupForm.username.$error.required"></span>
+
+    <label for="email">Email</label>
+    <input type="email" name="email" ng-model='user.email' required>
+    <span ng-show='signupForm.email.$dirty && signupForm.email.$invalid'>Email is required</span>
+    <span ng-show='signupForm.email.$error.required'></span>
+    <span ng-show='signupForm.email.$error.email'>Invalid email address.</span>
+
+    <label for="password">Password</label>
+    <input type="password" name="password" ng-model='user.password' ng-minlength='6' required>
+    <span ng-show='signupForm.password.$dirty && signupForm.password.$invalid'>Password is required</span>
+    <span ng-show='signupForm.password.$error.required'></span>
+    <span ng-show='signupForm.password.$error.minlength'>A password length of six characters is required</span>
+    <a href="#!login"><button class="signup-btn" ng-disabled='signupForm.$invalid' ng-click='singup(user)'>Sign In</button></a>
+</form>
